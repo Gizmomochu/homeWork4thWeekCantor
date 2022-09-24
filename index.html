@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praca domowa 4 tydzień - kalkulator walut</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Prosty kalkulator wymiany walut</legend>
+            <p>
+                <label class="form__label">Kwota <br>
+                    <input class="form__input js-form__input" type="number" min="1" required step="0.01" placeholder="Wymagane pole"> PLN
+                </label>
+            </p>
+            <p>
+                <label class="form__label">Chcę <br>
+                    <select class="form__fieldSelect js-form__exchangeWant" name="Currency">
+                        <option value="4.75">EURO</option>
+                        <option value="4.90">USD</option>
+                        <option value="0.034">JPN</option>
+                    </select>
+                    - kurs wynosi <strong class="js-form__currencyWant">N/A</strong> <span
+                        class="js-form__valueWant">PLN</span> na dzień 24.09.2022r
+                </label>
+            </p>
+            <p>
+                Otrzymasz <strong class="js-form__result">N/A</strong> <span class="js-form__currency">EURO</span>
+            </p>
+        </fieldset>
+        <button class="form__button" type="submit">Oblicz</button>
+        <button class="form__button" type="reset">Wyczyść</button>
+    </form>
+</body>
+
+</html>
