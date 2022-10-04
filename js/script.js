@@ -17,8 +17,7 @@ formElement.addEventListener("submit", (event) => {
     event.preventDefault();
 
     let finalResult = inputValue.value / exchangeWant.value;
-    // console.log(finalResult);
-
+   
     currencyWant.innerText = exchangeWant.value;
 
     value.innerText = finalResult.toFixed(2);
